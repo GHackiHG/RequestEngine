@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A814ED07-4B97-4BCB-9022-48492AF58D2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AuthEngine</RootNamespace>
+    <AssemblyName>AuthEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\AuthParams.cs" />
+    <Compile Include="Engine\AuthResponse.cs" />
+    <Compile Include="Engine\Controller.cs" />
+    <Compile Include="Engine\IAuthorizable.cs" />
+    <Compile Include="Engine\ProxyType.cs" />
+    <Compile Include="Engine\Reponse.cs" />
+    <Compile Include="Engine\RequestType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xNet\BytesContent.cs" />
+    <Compile Include="xNet\ChainProxyClient.cs" />
+    <Compile Include="xNet\CookieDictionary.cs" />
+    <Compile Include="xNet\DownloadProgressChangedEventArgs.cs" />
+    <Compile Include="xNet\ExceptionHelper.cs" />
+    <Compile Include="xNet\FileContent.cs" />
+    <Compile Include="xNet\FormUrlEncodedContent.cs" />
+    <Compile Include="xNet\Html.cs" />
+    <Compile Include="xNet\Http.cs" />
+    <Compile Include="xNet\HttpContent.cs" />
+    <Compile Include="xNet\HttpException.cs" />
+    <Compile Include="xNet\HttpExceptionStatus.cs" />
+    <Compile Include="xNet\HttpHeader.cs" />
+    <Compile Include="xNet\HttpMethod.cs" />
+    <Compile Include="xNet\HttpProxyClient.cs" />
+    <Compile Include="xNet\HttpRequest.cs" />
+    <Compile Include="xNet\HttpResponse.cs" />
+    <Compile Include="xNet\HttpStatusCode.cs" />
+    <Compile Include="xNet\MultipartContent.cs" />
+    <Compile Include="xNet\NetException.cs" />
+    <Compile Include="xNet\ProxyClient.cs" />
+    <Compile Include="xNet\ProxyException.cs" />
+    <Compile Include="xNet\ProxyHelper.cs" />
+    <Compile Include="xNet\ProxyType.cs" />
+    <Compile Include="xNet\RequestParams.cs" />
+    <Compile Include="xNet\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="xNet\SafeNativeMethods.cs" />
+    <Compile Include="xNet\Socks4aProxyClient.cs" />
+    <Compile Include="xNet\Socks4ProxyClient.cs" />
+    <Compile Include="xNet\Socks5ProxyClient.cs" />
+    <Compile Include="xNet\StreamContent.cs" />
+    <Compile Include="xNet\StringContent.cs" />
+    <Compile Include="xNet\UploadProgressChangedEventArgs.cs" />
+    <Compile Include="xNet\WinInet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xNet\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ua.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

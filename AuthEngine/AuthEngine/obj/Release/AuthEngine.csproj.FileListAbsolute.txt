@@ -1,0 +1,7 @@
+D:\MyProjectLibrary\AuthEngine\AuthEngine\bin\Release\AuthEngine.dll
+D:\MyProjectLibrary\AuthEngine\AuthEngine\bin\Release\AuthEngine.pdb
+D:\MyProjectLibrary\AuthEngine\AuthEngine\obj\Release\AuthEngine.csprojResolveAssemblyReference.cache
+D:\MyProjectLibrary\AuthEngine\AuthEngine\obj\Release\AuthEngine.dll
+D:\MyProjectLibrary\AuthEngine\AuthEngine\obj\Release\AuthEngine.pdb
+D:\MyProjectLibrary\AuthEngine\AuthEngine\obj\Release\AuthEngine.xNet.Resources.resources
+D:\MyProjectLibrary\AuthEngine\AuthEngine\obj\Release\AuthEngine.csproj.GenerateResource.Cache
